@@ -1,0 +1,100 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    background: linear-gradient(320deg, hsl(0, 100%, 50%), #000000, #ff0000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(216, 192, 192, 0.75);
+    border: 1px solid rgba(29, 27, 27, 0.01);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+}
+
+.gender-buttons button {
+    width: 130px;
+    padding: 12px;
+    background-color: #acd0e9;
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0 40px;
+    transition: background-color 0.3s ease;
+}
+
+.gender-buttons button.selected {
+    background-color: #236ea0;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px; /* Aumentado el espacio entre etiquetas */
+    color: #333;
+}
+
+.input-group input,
+.input-group select {
+    width: calc(100% - 20px);
+    padding: 12px; /* Aumentado el espacio dentro de los campos de entrada */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.watermark {
+    font-size: 12px;
+    color: rgba(233, 224, 224, 0.3);
+    margin-top: 20px;
+}
