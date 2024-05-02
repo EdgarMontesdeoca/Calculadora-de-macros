@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Macros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Macros</h1>
+        <div class="gender-buttons">
+            <button id="male" onclick="setGender('male')">Masculino</button>
+            <button id="female" onclick="setGender('female')">Femenino</button>
+        </div>
+
+        <div class="input-group">
+            <label for="height">Altura (cm):</label>
+            <input type="number" id="height" placeholder="Altura en centímetros">
+        </div>
+        
+        <div class="input-group">
+            <label for="age">Edad:</label>
+            <input type="number" id="age" placeholder="Edad en años">
+        </div>
+        
+        <div class="input-group">
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" placeholder="Peso en kilogramos">
+        </div>
+
+        <div class="input-group">
+            <label for="goal">Objetivos:</label>
+            <select id="goal">
+                <option value="maintain">Mantener</option>
+                <option value="lose">Perder Peso</option>
+                <option value="gain">Ganar Peso</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="activity-level">Nivel de Actividad:</label>
+            <select id="activity-level">
+                <option value="sedentary">Sedentario</option>
+                <option value="lightly-active">Ligeramente Activo</option>
+                <option value="moderately-active">Moderadamente Activo</option>
+                <option value="very-active">Muy Activo</option>
+            </select>
+        </div>
+
+        <button onclick="calculateMacros()">Calcular</button>
+        <div id="result"></div>
+    </div>
+
+    <footer class="footer">
+        <p class="watermark">EdgarMNTS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
